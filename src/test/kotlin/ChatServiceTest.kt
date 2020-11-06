@@ -57,7 +57,7 @@ class ChatServiceTest {
         val userService = UserServiceCore()
         val user1Id = userService.addUser(User(name = "Федя Мишевич"))
         val user2Id = userService.addUser(User(name = "Взнуздырик"))
-        val user1 = userService.findUserByName("Взнуздырик")
+        val user1 = userService.findUserByName("Федя Мишевич")
         val user2 = userService.findUserById(user2Id)
         val messageText = "Весьма относительно! Даже более чем весьма!"
         val messageId = chatService.createMessage(user1, user2, messageText)
